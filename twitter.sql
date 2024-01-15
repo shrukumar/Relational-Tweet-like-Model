@@ -3,7 +3,7 @@ CREATE DATABASE Twitter;
 
 use Twitter; 
 
-CREATE TABLE IF NOT EXISTS Tweet
+CREATE TABLE IF NOT EXISTS Tweets
 (
     tweet_id INT PRIMARY KEY AUTO_INCREMENT,
     user_id INT,

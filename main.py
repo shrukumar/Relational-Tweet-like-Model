@@ -21,9 +21,9 @@ def main():
     for idx, row in df_tweets.iterrows():
         api.post_tweet(Tweet(user_id = row[0], tweet_text = row[1]))
         
-
-    
-
+    rand_user = api.get_random_user()
+    timeline = api.get_timeline(rand_user)
+    print(timeline)
 
 if __name__ == '__main__':
     main()
