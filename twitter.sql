@@ -1,7 +1,10 @@
-DROP DATABASE IF EXISTS Twitter;
-CREATE DATABASE Twitter;
+DROP SCHEMA Twitter;
 
-use Twitter; 
+CREATE SCHEMA Twitter;
+
+USE Twitter;
+
+DROP TABLE IF EXISTS Tweets;
 
 CREATE TABLE IF NOT EXISTS Tweets
 (
@@ -9,11 +12,12 @@ CREATE TABLE IF NOT EXISTS Tweets
     user_id INT,
     tweet_ts TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     tweet_text VARCHAR(140)
-    )
+    );
 
-CREATE TABLE IF NOT EXISTS Follows
+DROP TABLE IF EXISTS Follow;
+
+CREATE TABLE IF NOT EXISTS Follow
 (
     user_id INT,
     follows_id INT
-)
-
+);
