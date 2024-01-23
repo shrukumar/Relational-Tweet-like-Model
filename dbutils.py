@@ -1,4 +1,5 @@
 """
+author: John Rachlin
 filename: dbutils.py
 Requires the driver:  conda install mysql-connector-python
 

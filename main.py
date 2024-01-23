@@ -1,3 +1,9 @@
+"""
+author: Shru Kumar
+filename: main.py
+description: driver of the API, utilizes other API files to generate followers table, post tweets,
+get timelines, and calculate API calls per second
+"""
 import os
 import pandas as pd
 from twitter_mysql import TwitterAPI
